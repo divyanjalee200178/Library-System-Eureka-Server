@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: service-registry
+
+  config:
+    import: "configserver:http://localhost:9000"  # <- make it optional
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
