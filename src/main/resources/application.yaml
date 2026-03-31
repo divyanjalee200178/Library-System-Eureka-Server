@@ -2,9 +2,10 @@ spring:
   application:
     name: service-registry
 
-  config:
-    import: "configserver:"
+  cloud:
+    config:
+      import: "configserver:"
+      uri: http://<VM_IP>:9000   # <-- GCP VM IP or localhost if local testing
 
-cloud:
-  config:
-    uri: http://config.platform:9000
+server:
+  port: 9001
