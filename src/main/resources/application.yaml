@@ -9,8 +9,3 @@ spring:
   cloud:
     config:
       uri: http://config.platform:9000
-
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false

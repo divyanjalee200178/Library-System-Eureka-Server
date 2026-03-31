@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 public class ServiceRegistryApplicationTests {
         @Test
         void contextLoads() {
-        // මේක empty method එකක්, just ApplicationContext load වෙනද check කරනවා
+
         }
 }
 
