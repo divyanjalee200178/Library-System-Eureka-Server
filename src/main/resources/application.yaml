@@ -4,8 +4,7 @@ spring:
 
   cloud:
     config:
-      import: "configserver:"
-      uri: http://<VM_IP>:9000   # <-- GCP VM IP or localhost if local testing
+      import: configserver:http://localhost:9000
 
 server:
   port: 9001
