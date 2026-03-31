@@ -3,12 +3,8 @@ spring:
     name: service-registry
 
   config:
-    import: "optional:configserver:http://localhost:9000"  # optional make it safe
+    import: "configserver:"
 
-server:
-  port: 9001
-
-eureka:
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
+cloud:
+  config:
+    uri: http://config.platform:9000
