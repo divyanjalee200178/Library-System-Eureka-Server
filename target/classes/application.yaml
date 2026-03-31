@@ -3,9 +3,9 @@ spring:
     name: service-registry
 
   config:
-    import: "configserver:http://localhost:9000"  # <- make it optional
+    import: "configserver:"
 
-eureka:
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+
+  cloud:
+    config:
+      uri: http://config.platform:9000
